@@ -12,6 +12,9 @@
       "supportsTablet": true
     },
     "android": {
+      "permissions": [
+        "READ_MEDIA_AUDIO"
+      ],
       "adaptiveIcon": {
         "backgroundColor": "#E6F4FE",
         "foregroundImage": "./assets/images/android-icon-foreground.png",
@@ -19,7 +22,8 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "package": "l.music"
     },
     "web": {
       "output": "static",
@@ -43,6 +47,12 @@
     "experiments": {
       "typedRoutes": true,
       "reactCompiler": true
+    },
+    "extra": {
+      "router": {},
+      "eas": {
+        "projectId": "7c6bd469-e7b1-49c3-bb47-6a377ca7e47b"
+      }
     }
   }
 }
